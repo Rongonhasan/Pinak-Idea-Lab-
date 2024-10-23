@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinak Idea Lab Private Limited
+</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .rotate-box {
+      transition: transform 0.6s ease-in-out, background-color 0.4s;
+      height: 300px; /* Set a specific height */
+    }
+    .rotate-box:hover {
+      transform: scale(1.05);
+      background-color: #444;
+    }
+    .icon-circle img {
+      width: 80px; /* Adjusted size */
+      height: 80px; /* Adjusted size */
+      object-fit: cover;
+      border-radius: 50%; /* Make images circular */
+      margin-top: -40px; /* Position the icon above */
+    }
+    .icon-circle {
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align items at the top */
+      flex-wrap: wrap; /* Allow wrapping */
+      min-height: 100vh; /* Full viewport height */
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      position: absolute; /* Positioned at the bottom */
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+    footer a {
+      text-decoration: underline;
+      margin: 0 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-purple-700 via-pink-700 to-red-700 p-6">
+
+  <div id="assignment" class="container">
+    <h1 class="text-white text-3xl text-center w-full ">Our Services</h1> <!-- Heading added here -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="rotate-box bg-blue-700 p-6 rounded-lg shadow-lg text-center relative">
+        <div class="icon-circle">
+          <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.2.2015771831.1686906543&semt=ais_hybrid">
+        </div>
+        <div class="mt-16"> <!-- Adjusted margin for content position -->
+          <h2 class="text-lg font-bold text-white">Web Development</h2>
+          <p class="text-white mt-2 text-sm">Build modern, responsive websites and web apps.</p>
+          <a href="#" class="mt-4 inline-block text-white underline">Explore this service</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="rotate-box bg-green-700 p-6 rounded-lg shadow-lg text-center relative">
+        <div class="icon-circle">
+          <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?ga=GA1.2.2015771831.1686906543&semt=ais_hybrid" alt="Mobile App Development">
+        </div>
+        <div class="mt-16">
+          <h2 class="text-lg font-bold text-white">Mobile App Development</h2>
+          <p class="text-white mt-2 text-sm">Create seamless mobile apps for iOS and Android.</p>
+          <a href="#" class="mt-4 inline-block text-white underline">Explore this service</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rotate-box bg-yellow-700 p-6 rounded-lg shadow-lg text-center relative">
+        <div class="icon-circle">
+          <img src="https://img.freepik.com/free-vector/isometric-cloud-storage-background_52683-1098.jpg?ga=GA1.2.2015771831.1686906543&semt=ais_hybrid" alt="Cloud Solutions">
+        </div>
+        <div class="mt-16">
+          <h2 class="text-lg font-bold text-white">Cloud Solutions</h2>
+          <p class="text-white mt-2 text-sm">Enhance performance with cloud computing.</p>
+          <a href="#" class="mt-4 inline-block text-white underline">Explore this service</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="rotate-box bg-red-700 p-6 rounded-lg shadow-lg text-center relative">
+        <div class="icon-circle">
+          <img src="https://img.freepik.com/free-photo/3d-internet-secuirty-badge_1048-18106.jpg?ga=GA1.2.2015771831.1686906543&semt=ais_hybrid" alt="Cybersecurity">
+        </div>
+        <div class="mt-16">
+          <h2 class="text-lg font-bold text-white">Cybersecurity</h2>
+          <p class="text-white mt-2 text-sm">Secure your systems with advanced cybersecurity.</p>
+          <a href="#" class="mt-4 inline-block text-white underline">Explore this service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made by Rongon</p>
+    <p>
+      <a href="https://www.linkedin.com/in/rongon-hasan-shise22/">LinkedIn</a> | 
+      <a href="https://github.com/Rongonhasan">GitHub</a> | 
+      <a href="https://rongon-hasan.web.app/">Portfolio</a>
+    </p>
+  </footer>
+
+</body>
+</html>
